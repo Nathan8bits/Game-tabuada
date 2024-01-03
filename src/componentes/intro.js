@@ -1,6 +1,6 @@
 import Styles from './Intro.module.css' 
 
-function Intro({introVisibleAltered, setQnt, btnIntro, setI1, setI2}) {
+function Intro({setQnt, btnIntro, setI1, setI2}) {
                 //dessa forma desestruturamos o objeto passado em variaveis
     return (
         <form

@@ -32,7 +32,7 @@ function Questao({key, index, i1, i2}) {
 
     return(
         <div id="Questao" className={StyleQuestao.container}>
-            <p> {index}) {n1 = gerarQuestao(n1)} x {n2 = gerarQuestao(n2)} = 
+            <p> {index +1}) {n1 = gerarQuestao(n1)} x {n2 = gerarQuestao(n2)} = 
                 <input 
                     id = "resposta"
                     placeholder='resposta'
@@ -40,8 +40,8 @@ function Questao({key, index, i1, i2}) {
                     className={StyleQuestao.number}> 
                 </input>
                 <button 
+                    onClick={verificar}
                     id = "btnVerificar"
-                    onClick ={verificar} 
                     className={StyleQuestao.btnQuestao} >Verificar</button>
             </p>
         </div>
