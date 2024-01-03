@@ -1,3 +1,17 @@
+
+* definir quantidade de questoes
+* definir intervalo
+* gerar dois numeros aleatorios pertencentes ao intervalo dado
+* verficar se o valor digitado em resposta é igual ao produto dos dois numeros gerados
+* repetir o mesmo numero de vezes que a quantidade de questoes dada
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

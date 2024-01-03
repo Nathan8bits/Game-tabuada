@@ -1,22 +1,43 @@
 import Styles from './Intro.module.css' 
 
-function Intro() {
-    //dessa forma desestruturamos o objeto passado em variaveis
+function Intro({introVisibleAltered, setQnt, btnIntro, setI1, setI2}) {
+                //dessa forma desestruturamos o objeto passado em variaveis
     return (
-        <div className={Styles.container}>
+        <form
+        onClick = {btnIntro} 
+        className={Styles.container}>
             <h1>Tabuada Game</h1>
-            <label for="qntQuestoes">Quantas questões?
-                <input className={Styles.number} type="number" id="qntQuestoes" name="qntQuestoes" />
+            <label >Quantas questões?
+                <input 
+                    className={Styles.number}
+                    type="number"
+                    id="qntQuestoes"
+                    name="qntQuestoes"
+                    onChange={ (e) => setQnt(e.target.value)} />
             </label> 
-            <label for="Intervalo">Qual o intervalo?
+            <label >Qual o intervalo?
                 Entre
-                <input className={Styles.number} type="number" id="i1" name="intervalo1" />
+                <input 
+                    placeholder='1'
+                    onChange={(e) => setI1(e.target.value)}
+                    className={Styles.number} 
+                    type="number" 
+                    id="i1" 
+                    name="i1" />
                 e
-                <input className={Styles.number} type="number" id="i1" name="intervalo1" />
+                <input 
+                    placeholder='10'
+                    onChange={(e) => setI2(e.target.value)}
+                    className={Styles.number} 
+                    type="number" 
+                    id="i2" 
+                    name="i2" />
             </label> 
 
-            <button className={Styles.btnIntro}>OK</button>
-        </div>
+            <input type="submit" 
+                   className={Styles.btnIntro}
+                   value="cadastrar"/>
+        </form>
     )
 }
 

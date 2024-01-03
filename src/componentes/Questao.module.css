@@ -1,14 +1,13 @@
-
 .container{
-    text-align: left;
-    color: aliceblue;
-    padding: 10%;
-    border-radius: 5px;
-    background-color: rgb(11, 192, 95);
-    
-    width: 50%;
     margin: auto;
-    margin-top: 10%;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+    border-radius: 5px;
+    background-color: rgb(144, 190, 173);
+    
+    width: 50vh;
+    margin-top: 5%;
 
     display: flex;
     align-items: center;
